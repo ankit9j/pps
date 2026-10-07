@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 90" fill="none" width="340" height="90">
-  <!-- 🔴 PITTER PATTER STUDIO - OFFICIAL VECTOR BRAND LOGO 🔴 -->
-  <!-- Curled 'O' Smiling Brand Mark -->
-  <g transform="translate(10, 8)">
-    <path d="M54.4 29.2C51.6 21.6 44.4 16.4 36 16.4C22.96 16.4 12.4 26.96 12.4 40C12.4 53.04 22.96 63.6 36 63.6C49.04 63.6 59.6 53.04 59.6 40C59.6 36.16 58.64 32.56 56.96 29.44C55.6 26.96 57.44 24 60.24 24C66.8 24 69.6 18.8 68.8 12.8C58.4 13.6 55.2 17.6 54.4 29.2Z" fill="#4F9CF8"/>
-    <circle cx="36" cy="40" r="14.8" fill="#FFFFFF"/>
-    <!-- Smiling Eyes -->
-    <path d="M30 36.4C30 34.4 32.4 32.8 34.8 34.4C35.2 34.64 35 36.64 33.6 36.64C31.6 36.64 30.4 36.64 30 36.4Z" fill="#4F9CF8"/>
-    <path d="M38.8 34.4C41.2 32.8 43.6 34.4 43.6 36.4C43.2 36.64 42 36.64 40 36.64C38.56 36.64 38.4 34.64 38.8 34.4Z" fill="#4F9CF8"/>
-    <!-- Friendly Mouth -->
-    <path d="M32 41.6C33.6 44.8 38.4 44.8 40 41.6" stroke="#4F9CF8" stroke-width="2.3" stroke-linecap="round"/>
+  <!-- 🔴 PITTER PATTER STUDIO - OFFICIAL VECTOR BRAND LOGO WITH UPDATED MARK 🔴 -->
+  <g transform="translate(8, 8) scale(0.245)" fill="#4F9CF8">
+    <!-- Outer Curled Body with Stencil Gap -->
+    <path d="M 248 26 C 238 28 206 32 172 33 C 118 35 72 62 42 106 C 16 148 16 200 40 240 C 66 282 116 300 164 296 C 212 292 254 260 272 214 C 282 186 280 144 266 96 L 214 104 C 222 134 222 166 210 194 C 194 230 156 250 118 244 C 78 238 48 202 52 160 C 54 122 84 88 122 80 C 150 74 182 82 202 98 L 218 74 C 196 58 168 50 140 50 C 170 44 212 46 236 38 C 246 34 250 28 248 26 Z"/>
+    <!-- Left Eye -->
+    <path d="M 104 150 C 104 124 140 124 140 150 C 130 146 114 146 104 150 Z"/>
+    <!-- Right Eye -->
+    <path d="M 164 150 C 164 124 200 124 200 150 C 190 146 174 146 164 150 Z"/>
+    <!-- Cheerful Mouth -->
+    <path d="M 122 180 C 142 184 162 184 182 180 C 180 216 124 216 122 180 Z"/>
   </g>
 
   <!-- Stencil Cut Logotype: PITTER PATTER STUDIO -->
