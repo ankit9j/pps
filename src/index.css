@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --font-condensed: "Barlow Condensed", "Myriad Pro Condensed", sans-serif;
+  --font-script: "Caveat", cursive;
+  --font-sans: "Plus Jakarta Sans", "Myriad Pro", sans-serif;
+
+  --color-rain-blue: #4F9CF8;
+  --color-rain-blue-hover: #3b87e6;
+  --color-rain-blue-light: #EBF3FE;
+  --color-rain-blue-dark: #1E60B5;
+
+  --color-wet-siana: #B8433C;
+  --color-wet-siana-hover: #a1352f;
+  --color-wet-siana-light: #FBEAE8;
+  --color-wet-siana-dark: #8B2C26;
+
+  --color-new-green: #48BF7B;
+  --color-new-green-hover: #3AA769;
+  --color-new-green-light: #EAF8F1;
+  --color-new-green-dark: #2F8754;
+
+  --color-brand-charcoal: #1E232B;
+}
+
+/* Custom utility classes matching the brand guide */
+.font-condensed {
+  font-family: var(--font-condensed);
+}
+
+.font-script {
+  font-family: var(--font-script);
+}
+
+/* Smooth selection and focus styles */
+:focus-visible {
+  outline: 2px solid #4F9CF8;
+  outline-offset: 2px;
+}

@@ -1,0 +1,1442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pitter Patter Studio - Child-Led Early Learning & Play Studio in Gurgaon</title>
+  <meta name="description" content="A mindful, child-led early learning and play studio in Gurgaon for ages 1.5 to 6. Merging process-focused art, sensory integration, and Montessori-inspired exploration in safe, AQI-controlled sanctuary environments.">
+  
+  <!-- 🔴 FAVICON CONFIGURATION (REPLACE WITH YOUR FAVICON) 🔴 -->
+  <link rel="icon" type="image/svg+xml" href="images/logo-mark.svg">
+
+  <!-- 🔴 STYLESHEET (EDIT COLORS, FONTS, AND STYLES IN style.css) 🔴 -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       🔴 1. NAVIGATION BAR (EDIT YOUR NAV LINKS & LOGO HERE) 🔴
+       ======================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      
+      <!-- 🔴 CHANGE YOUR LOGO PATH BELOW THIS LINE 🔴 -->
+      <a href="#" class="brand-link" aria-label="Pitter Patter Studio Home">
+        <img src="images/logo.svg" alt="Pitter Patter Studio" class="brand-logo-img">
+      </a>
+      <!-- 🔴 END OF LOGO 🔴 -->
+
+      <!-- 🔴 EDIT NAVIGATION LINKS HERE 🔴 -->
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#about" class="nav-link">About Us</a>
+        <a href="#philosophy" class="nav-link">Our Philosophy</a>
+        <a href="#space" class="nav-link">The Physical Space</a>
+        <a href="#programs" class="nav-link">Programs &amp; Options</a>
+        <a href="#safety" class="nav-link">Safety &amp; Standards</a>
+      </nav>
+
+      <!-- 🔴 HEADER ACTION BUTTONS 🔴 -->
+      <div class="header-actions">
+        <!-- Direct Phone Link -->
+        <a href="tel:+919871350426" class="phone-quick-link" title="Call Gurgaon Studio">
+          <span style="color:var(--color-rain-blue);">📞</span>
+          <span>9871350426</span>
+        </a>
+
+        <!-- CTA Button -->
+        <button type="button" class="btn btn-primary" onclick="selectProgram('Quarterly Subscription')">
+          Join the Community
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button type="button" class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-nav-drawer" id="mobileNavDrawer">
+      <div class="mobile-nav-links">
+        <a href="#about" class="mobile-nav-link">About Us</a>
+        <a href="#philosophy" class="mobile-nav-link">Our Philosophy</a>
+        <a href="#space" class="mobile-nav-link">The Physical Space</a>
+        <a href="#programs" class="mobile-nav-link">Programs &amp; Options</a>
+        <a href="#safety" class="mobile-nav-link">Safety &amp; Standards</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <a href="tel:+919871350426" class="btn btn-secondary" style="width:100%;">
+          📞 Call Studio: +91 9871350426
+        </a>
+        <button type="button" class="btn btn-primary" style="width:100%;" onclick="openBookingModal('Studio Visit & Experiential Tour')">
+          Book a Visit / Reserve Slot
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========================================================================
+         🔴 2. HERO SECTION (EDIT HEADLINE, COPY & CTAS HERE) 🔴
+         ======================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        
+        <!-- Left Column: Copy Prescribed by Founders -->
+        <div class="hero-content">
+          
+          <div class="hero-eyebrow">
+            <span style="color:var(--color-rain-blue);">GURGAON STUDIO</span>
+            <span style="color:var(--color-border);">&bull;</span>
+            <span style="color:var(--color-charcoal);">Ages 1.5 to 6 Years</span>
+            <span style="color:var(--color-border);">&bull;</span>
+            <span style="color:var(--color-wet-siana);">Child-Led Sanctuary</span>
+          </div>
+
+          <!-- 🔴 EDIT HERO HEADLINE HERE 🔴 -->
+          <h1 class="hero-headline">
+            A Mindful, Child-Led Early Learning &amp; Play Studio in <span style="color:var(--color-rain-blue);">Gurgaon.</span>
+          </h1>
+
+          <!-- Tagline Script -->
+          <div class="font-script" style="color:var(--color-wet-siana);font-size:2rem;font-weight:700;">
+            learn play explore
+          </div>
+
+          <!-- 🔴 EDIT HERO SUB-HEADLINE HERE 🔴 -->
+          <p class="hero-subheadline">
+            Merging <strong>process-focused art</strong>, <strong>sensory integration</strong>, and <strong>Montessori-inspired exploration</strong> for ages 1.5 to 6 in safe, sanctuary-like environments.
+          </p>
+
+          <!-- 3 Value Pillars -->
+          <div class="hero-badges-row">
+            <div class="hero-badge-item">
+              <span style="color:var(--color-rain-blue);">🎨</span>
+              <span>Process Art over Product</span>
+            </div>
+            <div class="hero-badge-item">
+              <span style="color:var(--color-new-green);">🍃</span>
+              <span>Gurgaon Winter AQI Filtered</span>
+            </div>
+            <div class="hero-badge-item">
+              <span style="color:var(--color-wet-siana);">🛡️</span>
+              <span>Non-Toxic &amp; Plastic-Free</span>
+            </div>
+          </div>
+
+          <!-- 🔴 PRIMARY & SECONDARY HERO CTAS 🔴 -->
+          <div class="hero-cta-group">
+            <button type="button" class="btn btn-primary" onclick="openBookingModal('Studio Visit & Experiential Tour')">
+              Book a Visit / Reserve a Slot &rarr;
+            </button>
+            <button type="button" class="btn btn-secondary" onclick="openBrochureModal()">
+              📥 Download Studio Information Brochure
+            </button>
+          </div>
+
+          <!-- Founder Credibility Note -->
+          <div class="hero-founder-footnote">
+            <strong style="color:var(--color-wet-siana);text-transform:uppercase;font-family:var(--font-heading);">Founder Credibility:</strong>
+            15 yrs Corporate Strategy &amp; CX (Shipra) + 25 yrs Early Childhood Pedagogy (Ex-KLAY Regional Head, Swati).
+          </div>
+
+        </div>
+
+        <!-- Right Column: Interactive Age & Studio Explorer -->
+        <div>
+          <div class="hero-card">
+            <div class="hero-card-stripe"></div>
+
+            <div class="hero-card-header">
+              <div style="display:flex;align-items:center;gap:12px;">
+                <img src="images/logo-mark.svg" alt="Pitter Patter Mark" style="width:40px;height:40px;">
+                <div>
+                  <h3 style="font-size:1.2rem;line-height:1;">DEVELOPMENTAL TIERS</h3>
+                  <p style="font-size:0.75rem;color:var(--color-text-muted);">Ages 1.5 to 6 in Gurgaon</p>
+                </div>
+              </div>
+              <span class="font-script" style="color:var(--color-rain-blue);font-size:1.2rem;font-weight:700;">Child-Led</span>
+            </div>
+
+            <!-- Age Switcher Buttons -->
+            <div class="hero-age-switcher">
+              <button type="button" class="hero-age-btn" data-age="1.5-2.5">1.5–2.5 Yrs</button>
+              <button type="button" class="hero-age-btn active" data-age="2.5-4">2.5–4 Yrs</button>
+              <button type="button" class="hero-age-btn" data-age="4-6">4–6 Yrs</button>
+            </div>
+
+            <!-- Dynamic Box for Selected Age -->
+            <div class="hero-tier-box" id="heroTierBox" style="background-color:var(--color-wet-siana-light);">
+              <h4 id="heroTierTitle" style="font-size:1.3rem;margin-bottom:2px;">Curious Explorers (Ages 2.5–4)</h4>
+              <p class="font-script" id="heroTierTagline" style="font-size:1.15rem;color:var(--color-charcoal);margin-bottom:8px;">
+                "Process art, sensory integration &amp; Montessori toolsets"
+              </p>
+              <p id="heroTierFocus" style="font-size:0.85rem;color:var(--color-text-main);line-height:1.5;">
+                Open-ended clay work, shadow &amp; light tables, and self-correcting wooden puzzles celebrating the process of discovery.
+              </p>
+              <div id="heroTierHighlights" style="margin-top:10px;padding-top:8px;border-top:1px solid rgba(0,0,0,0.06);">
+                <div style="display:flex;align-items:center;gap:6px;font-size:0.8rem;font-weight:600;margin-top:4px;">
+                  <span style="color:var(--color-wet-siana);">✓</span> <span>Atelier of Curiosity (no rigid templates)</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:6px;font-size:0.8rem;font-weight:600;margin-top:4px;">
+                  <span style="color:var(--color-wet-siana);">✓</span> <span>Collaborative loose-parts architecture</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:6px;font-size:0.8rem;font-weight:600;margin-top:4px;">
+                  <span style="color:var(--color-wet-siana);">✓</span> <span>Guided by certified Montessori facilitators</span>
+                </div>
+              </div>
+            </div>
+
+            <div style="display:flex;justify-content:space-between;align-items:center;font-size:0.8rem;color:var(--color-text-muted);padding-top:10px;border-top:1px solid var(--color-border-subtle);">
+              <span>Small cohorts (Max 8 children)</span>
+              <button type="button" style="color:var(--color-rain-blue);font-weight:700;" onclick="openBookingModal('Studio Visit & Experiential Tour')">
+                Schedule Walkthrough &rarr;
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================================
+         🔴 3. SECTION 1: ABOUT US & FOUNDER CREDIBILITY 🔴
+         ======================================================================== -->
+    <section class="section-padding about-section" id="about">
+      <div class="container">
+        
+        <div class="section-kicker" style="color:var(--color-wet-siana);">
+          <span>SECTION 1: ABOUT US</span>
+          <span>&bull;</span>
+          <span>GURGAON STUDIO PURPOSE</span>
+        </div>
+
+        <h2 class="section-title">
+          Building Spaces Where Children <span style="color:var(--color-wet-siana);">Lead and Discover</span>
+        </h2>
+
+        <div class="section-tagline" style="color:var(--color-rain-blue);">
+          learn play explore
+        </div>
+
+        <p class="section-lead">
+          Founded by a dedicated team combining strategic business vision with early-learning pedagogy, our studio was created to address a gap in Gurgaon’s early childhood landscape: spaces that balance unstructured creativity with science-backed child development, rigorous health standards, and uncompromising safety.
+        </p>
+
+        <!-- 🔴 FOUNDER CREDIBILITY BOX (EDIT FOUNDER PROFILES HERE) 🔴 -->
+        <div class="founder-box">
+          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:14px;border-bottom:1px solid var(--color-border);padding-bottom:14px;">
+            <div>
+              <span style="font-family:var(--font-heading);font-size:0.85rem;font-weight:700;color:var(--color-wet-siana);text-transform:uppercase;">
+                LEADERSHIP &amp; PEDAGOGICAL VISION
+              </span>
+              <h3 style="font-size:2rem;margin-top:2px;">Founder Credibility</h3>
+            </div>
+            <div style="background:#FFFFFF;border:1px solid var(--color-border);padding:6px 14px;border-radius:var(--radius-sm);font-size:0.85rem;font-weight:600;">
+              40+ Years Cumulative Expertise
+            </div>
+          </div>
+
+          <p class="founder-lead-quote">
+            Led by a rare blend of <strong>15 years of corporate strategy, marketing, and customer experience (Shipra)</strong> and <strong>25 years of early childhood pedagogy (Ex-KLAY Regional Head) (Swati)</strong>.
+          </p>
+
+          <div class="founder-grid">
+            
+            <!-- Shipra: Business & Strategy Lead -->
+            <div class="founder-card">
+              <div>
+                <div class="founder-header">
+                  <div class="founder-avatar" style="background-color:var(--color-rain-blue);">S</div>
+                  <div>
+                    <h4 style="font-size:1.6rem;line-height:1;">Shipra</h4>
+                    <div style="font-size:0.85rem;color:var(--color-rain-blue);font-weight:700;text-transform:uppercase;font-family:var(--font-heading);">
+                      Business &amp; Strategy Lead
+                    </div>
+                  </div>
+                </div>
+
+                <div class="founder-badge" style="background:var(--color-rain-blue-light);color:var(--color-rain-blue-dark);">
+                  15 Years Corporate Strategy, Marketing &amp; CX
+                </div>
+
+                <p style="font-size:0.9rem;color:var(--color-text-main);margin-top:10px;line-height:1.6;">
+                  Brings a comprehensive background in capital planning, real estate management, and customer experience, ensuring seamless operations, parent communications, and legal/safety compliance.
+                </p>
+              </div>
+
+              <div style="display:flex;align-items:center;gap:6px;font-size:0.85rem;font-weight:600;color:var(--color-charcoal);border-top:1px solid var(--color-border-subtle);padding-top:12px;">
+                <span style="color:var(--color-rain-blue);">✓</span>
+                <span>Operations, Facility Scaling &amp; Parent Experience</span>
+              </div>
+            </div>
+
+            <!-- Swati: Pedagogy & Operations Lead -->
+            <div class="founder-card">
+              <div>
+                <div class="founder-header">
+                  <div class="founder-avatar" style="background-color:var(--color-wet-siana);">SW</div>
+                  <div>
+                    <h4 style="font-size:1.6rem;line-height:1;">Swati</h4>
+                    <div style="font-size:0.85rem;color:var(--color-wet-siana);font-weight:700;text-transform:uppercase;font-family:var(--font-heading);">
+                      Pedagogy &amp; Operations Lead
+                    </div>
+                  </div>
+                </div>
+
+                <div class="founder-badge" style="background:var(--color-wet-siana-light);color:var(--color-wet-siana-dark);">
+                  25 Years Early Pedagogy &bull; Ex-KLAY Regional Head
+                </div>
+
+                <p style="font-size:0.9rem;color:var(--color-text-main);margin-top:10px;line-height:1.6;">
+                  An early childhood educator with specialized expertise in child psychology, curriculum design, and sensory-based developmental play. Formerly regional head at KLAY, mentoring facilitators.
+                </p>
+              </div>
+
+              <div style="display:flex;align-items:center;gap:6px;font-size:0.85rem;font-weight:600;color:var(--color-charcoal);border-top:1px solid var(--color-border-subtle);padding-top:12px;">
+                <span style="color:var(--color-wet-siana);">✓</span>
+                <span>Curriculum Architecture &amp; Facilitator Coaching</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Story of the O & Brand Personality Pillars -->
+        <div class="story-pillars-grid">
+          
+          <div class="story-box">
+            <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px;">
+              <img src="images/logo-mark.svg" alt="Pitter Patter Mark" style="width:38px;height:38px;">
+              <div>
+                <h3 style="font-size:1.6rem;line-height:1;">The Story of the &ldquo;O&rdquo;</h3>
+                <span style="font-size:0.75rem;color:var(--color-wet-siana);font-weight:700;text-transform:uppercase;font-family:var(--font-heading);">
+                  Form Evolution &bull; Discovering the Individual
+                </span>
+              </div>
+            </div>
+            <blockquote style="font-size:0.95rem;color:var(--color-text-main);line-height:1.6;font-style:italic;">
+              &ldquo;It is not the O. It is from the O.&rdquo;<br><br>
+              As part of a family, you are one of the many O’s &mdash; connected, nurtured and shaped by everything around you. But as you grow, you begin to discover the individual within. At Pitter Patter Studio, we believe evolution is about discovering that individual &mdash; the person you are becoming, in your own way.
+            </blockquote>
+          </div>
+
+          <div class="pillars-grid">
+            <div class="pillar-card" style="background:var(--color-rain-blue-light);">
+              <div>
+                <div style="width:10px;height:10px;border-radius:50%;background:var(--color-rain-blue);margin-bottom:8px;"></div>
+                <h4 style="font-size:1.25rem;">Curious, but not chaotic</h4>
+                <p style="font-size:0.85rem;color:var(--color-text-main);margin-top:4px;">Deep inquiry and wonder within an intentional sanctuary.</p>
+              </div>
+              <span style="font-size:0.75rem;font-weight:700;color:var(--color-text-muted);font-family:var(--font-heading);">PILLAR 01</span>
+            </div>
+
+            <div class="pillar-card" style="background:var(--color-wet-siana-light);">
+              <div>
+                <div style="width:10px;height:10px;border-radius:50%;background:var(--color-wet-siana);margin-bottom:8px;"></div>
+                <h4 style="font-size:1.25rem;">Intelligent, but not serious</h4>
+                <p style="font-size:0.85rem;color:var(--color-text-main);margin-top:4px;">25 years developmental research delivered through playful laughter.</p>
+              </div>
+              <span style="font-size:0.75rem;font-weight:700;color:var(--color-text-muted);font-family:var(--font-heading);">PILLAR 02</span>
+            </div>
+
+            <div class="pillar-card" style="background:var(--color-new-green-light);">
+              <div>
+                <div style="width:10px;height:10px;border-radius:50%;background:var(--color-new-green);margin-bottom:8px;"></div>
+                <h4 style="font-size:1.25rem;">Playful, but not childish</h4>
+                <p style="font-size:0.85rem;color:var(--color-text-main);margin-top:4px;">Treating children as capable researchers of their own theories.</p>
+              </div>
+              <span style="font-size:0.75rem;font-weight:700;color:var(--color-text-muted);font-family:var(--font-heading);">PILLAR 03</span>
+            </div>
+
+            <div class="pillar-card" style="background:#F1F5F9;">
+              <div>
+                <div style="width:10px;height:10px;border-radius:50%;background:var(--color-charcoal);margin-bottom:8px;"></div>
+                <h4 style="font-size:1.25rem;">Warm, but not overly sweet</h4>
+                <p style="font-size:0.85rem;color:var(--color-text-main);margin-top:4px;">Authentic attunement nurturing long-term emotional regulation.</p>
+              </div>
+              <span style="font-size:0.75rem;font-weight:700;color:var(--color-text-muted);font-family:var(--font-heading);">PILLAR 04</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================================
+         🔴 4. SECTION 2: OUR PHILOSOPHY (CHILD-LED & FRAMEWORKS) 🔴
+         ======================================================================== -->
+    <section class="section-padding philosophy-section" id="philosophy">
+      <div class="container">
+        
+        <div class="section-kicker" style="color:var(--color-rain-blue);">
+          <span>SECTION 2: OUR PHILOSOPHY</span>
+          <span>&bull;</span>
+          <span>INTENTIONAL PEDAGOGY</span>
+        </div>
+
+        <h2 class="section-title">
+          Child-Led, Process-Focused, <span style="color:var(--color-rain-blue);">and Balanced Discovery</span>
+        </h2>
+
+        <div class="section-tagline" style="color:var(--color-wet-siana);">
+          learn play explore
+        </div>
+
+        <p class="section-lead">
+          We operate at the sweet spot between unstructured play and intentional design &mdash; giving children freedom within a safe, thoughtfully curated environment.
+        </p>
+
+        <!-- Interactive Tab Buttons -->
+        <div class="tab-nav-bar">
+          <button type="button" class="tab-nav-btn active" data-target="tabSpaceWorks">
+            How Our Space Works (3 Sanctuaries)
+          </button>
+          <button type="button" class="tab-nav-btn" data-target="tabFrameworks">
+            Global Learning Frameworks
+          </button>
+          <button type="button" class="tab-nav-btn" data-target="tabDimensions">
+            6 Developmental Dimensions
+          </button>
+        </div>
+
+        <!-- Panel 1: How Our Space Works -->
+        <div class="tab-content-panel active" id="tabSpaceWorks">
+          <div class="sanctuaries-grid">
+            
+            <div class="sanctuary-card">
+              <div>
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;">
+                  <span style="font-size:1.8rem;">❤️</span>
+                  <span style="font-family:var(--font-heading);font-size:0.75rem;font-weight:700;text-transform:uppercase;background:var(--color-wet-siana-light);color:var(--color-wet-siana);padding:4px 8px;border-radius:var(--radius-sm);">
+                    Emotional Grounding
+                  </span>
+                </div>
+                <h3 style="font-size:1.6rem;margin-bottom:4px;">The Intrapersonal Haven</h3>
+                <p class="font-script" style="font-size:1.1rem;color:var(--color-text-muted);margin-bottom:10px;">
+                  "Emotional self-regulation over constant external performance"
+                </p>
+                <p style="font-size:0.9rem;color:var(--color-text-main);line-height:1.6;">
+                  A quiet, low-stimulation nook where children can pause, reflect, and reset when feeling overstimulated. Fitted with sound-softening felt, sheepskin rugs, and calming picture books.
+                </p>
+              </div>
+              <div style="border-top:1px solid var(--color-border-subtle);padding-top:12px;font-size:0.85rem;color:var(--color-text-main);">
+                <div>✓ Acoustically dampened retreat</div>
+                <div>✓ Quiet observation without adult intrusion</div>
+              </div>
+            </div>
+
+            <div class="sanctuary-card">
+              <div>
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;">
+                  <span style="font-size:1.8rem;">✨</span>
+                  <span style="font-family:var(--font-heading);font-size:0.75rem;font-weight:700;text-transform:uppercase;background:var(--color-rain-blue-light);color:var(--color-rain-blue);padding:4px 8px;border-radius:var(--radius-sm);">
+                    Process Art &amp; Light
+                  </span>
+                </div>
+                <h3 style="font-size:1.6rem;margin-bottom:4px;">The Atelier of Curiosity</h3>
+                <p class="font-script" style="font-size:1.1rem;color:var(--color-text-muted);margin-bottom:10px;">
+                  "Discovery celebrated rather than uniform take-home products"
+                </p>
+                <p style="font-size:0.9rem;color:var(--color-text-main);line-height:1.6;">
+                  Open-ended exploration with clay, light, shadow, and natural pigments. Guided by Reggio Emilia, children test visual theories without rigid step-by-step coloring books.
+                </p>
+              </div>
+              <div style="border-top:1px solid var(--color-border-subtle);padding-top:12px;font-size:0.85rem;color:var(--color-text-main);">
+                <div>✓ Pure earthen non-toxic clay stations</div>
+                <div>✓ Backlit sensory shadow projection</div>
+              </div>
+            </div>
+
+            <div class="sanctuary-card">
+              <div>
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;">
+                  <span style="font-size:1.8rem;">🪵</span>
+                  <span style="font-family:var(--font-heading);font-size:0.75rem;font-weight:700;text-transform:uppercase;background:var(--color-new-green-light);color:var(--color-new-green);padding:4px 8px;border-radius:var(--radius-sm);">
+                    Tactile Autonomy
+                  </span>
+                </div>
+                <h3 style="font-size:1.6rem;margin-bottom:4px;">Self-Directed Floor Play</h3>
+                <p class="font-script" style="font-size:1.1rem;color:var(--color-text-muted);margin-bottom:10px;">
+                  "Plastic-free, open shelving stocked with natural timber &amp; stones"
+                </p>
+                <p style="font-size:0.9rem;color:var(--color-text-main);line-height:1.6;">
+                  Plastic-free shelving stocked with natural beechwood, stones, and loose parts that allow children to build, sort, and solve gravitational problems on their own terms.
+                </p>
+              </div>
+              <div style="border-top:1px solid var(--color-border-subtle);padding-top:12px;font-size:0.85rem;color:var(--color-text-main);">
+                <div>✓ Screen-free tactile focus for growing brains</div>
+                <div>✓ Self-correcting Montessori manipulatives</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Panel 2: Global Frameworks -->
+        <div class="tab-content-panel" id="tabFrameworks">
+          <div style="background:#FFFFFF;border-radius:var(--radius-xl);padding:36px;border:1px solid var(--color-border);">
+            <h3 style="font-size:2rem;margin-bottom:6px;">Synthesizing Leading Global Early-Learning Frameworks</h3>
+            <p style="font-size:0.95rem;color:var(--color-text-muted);margin-bottom:24px;">
+              Grounded in the best pedagogical research from Reggio Emilia, Maria Montessori, and Howard Gardner.
+            </p>
+
+            <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:20px;">
+              <div style="background:var(--color-canvas-bg);padding:24px;border-radius:var(--radius-lg);border:1px solid var(--color-border);">
+                <span style="color:var(--color-rain-blue);font-weight:700;font-size:0.8rem;text-transform:uppercase;font-family:var(--font-heading);">Framework 01</span>
+                <h4 style="font-size:1.4rem;margin:4px 0;">Reggio Emilia ("The Studio of Curiosity")</h4>
+                <p style="font-size:0.85rem;color:var(--color-text-main);line-height:1.6;">
+                  Viewing the child as a curious, capable researcher. We value the process of creation over the final product.
+                </p>
+              </div>
+
+              <div style="background:var(--color-canvas-bg);padding:24px;border-radius:var(--radius-lg);border:1px solid var(--color-border);">
+                <span style="color:var(--color-wet-siana);font-weight:700;font-size:0.8rem;text-transform:uppercase;font-family:var(--font-heading);">Framework 02</span>
+                <h4 style="font-size:1.4rem;margin:4px 0;">Montessori Exploration</h4>
+                <p style="font-size:0.85rem;color:var(--color-text-main);line-height:1.6;">
+                  Self-directed sensory and cognitive toolsets guided by trained early-learning facilitators.
+                </p>
+              </div>
+
+              <div style="background:var(--color-canvas-bg);padding:24px;border-radius:var(--radius-lg);border:1px solid var(--color-border);">
+                <span style="color:var(--color-new-green);font-weight:700;font-size:0.8rem;text-transform:uppercase;font-family:var(--font-heading);">Framework 03</span>
+                <h4 style="font-size:1.4rem;margin:4px 0;">Howard Gardner’s Multiple Intelligences</h4>
+                <p style="font-size:0.85rem;color:var(--color-text-main);line-height:1.6;">
+                  Featuring our Intrapersonal Haven &mdash; a sanctuary honoring internal emotional self-regulation and spatial discovery.
+                </p>
+              </div>
+
+              <div style="background:var(--color-canvas-bg);padding:24px;border-radius:var(--radius-lg);border:1px solid var(--color-border);">
+                <span style="color:var(--color-charcoal);font-weight:700;font-size:0.8rem;text-transform:uppercase;font-family:var(--font-heading);">Framework 04</span>
+                <h4 style="font-size:1.4rem;margin:4px 0;">Sensory Integration &amp; Loose Parts</h4>
+                <p style="font-size:0.85rem;color:var(--color-text-main);line-height:1.6;">
+                  Open-ended play environments using natural materials to build motor skills, body awareness, and problem-solving without screens.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 3: 6 Developmental Dimensions -->
+        <div class="tab-content-panel" id="tabDimensions">
+          <div style="background:#FFFFFF;border-radius:var(--radius-xl);padding:36px;border:1px solid var(--color-border);">
+            <h3 style="font-size:2rem;margin-bottom:6px;">The 6 Simultaneous Aspects of Development</h3>
+            <p style="font-size:0.95rem;color:var(--color-text-muted);margin-bottom:24px;">
+              From the brand guidelines (PDF Pages 6 &amp; 7): learning is never one-dimensional.
+            </p>
+
+            <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:16px;">
+              <div style="background:var(--color-rain-blue-light);padding:20px;border-radius:var(--radius-md);">
+                <h4 style="font-size:1.3rem;">Cognitive</h4>
+                <p style="font-size:0.85rem;color:var(--color-text-main);">Thinking &bull; problem-solving &bull; concentration &bull; curiosity</p>
+              </div>
+              <div style="background:var(--color-wet-siana-light);padding:20px;border-radius:var(--radius-md);">
+                <h4 style="font-size:1.3rem;">Creative</h4>
+                <p style="font-size:0.85rem;color:var(--color-text-main);">Imagination &bull; experimentation &bull; expression &bull; representation</p>
+              </div>
+              <div style="background:var(--color-new-green-light);padding:20px;border-radius:var(--radius-md);">
+                <h4 style="font-size:1.3rem;">Physical</h4>
+                <p style="font-size:0.85rem;color:var(--color-text-main);">Balance &bull; Coordination &bull; Strength &bull; Fine &amp; Gross Motor</p>
+              </div>
+              <div style="background:var(--color-rain-blue-light);padding:20px;border-radius:var(--radius-md);">
+                <h4 style="font-size:1.3rem;">Sensory</h4>
+                <p style="font-size:0.85rem;color:var(--color-text-main);">Touch &bull; Texture &bull; Light &bull; Sound &bull; Movement &bull; Space</p>
+              </div>
+              <div style="background:var(--color-wet-siana-light);padding:20px;border-radius:var(--radius-md);">
+                <h4 style="font-size:1.3rem;">Social</h4>
+                <p style="font-size:0.85rem;color:var(--color-text-main);">Shared Play &bull; Communication &bull; Cooperation &bull; Relationships</p>
+              </div>
+              <div style="background:var(--color-new-green-light);padding:20px;border-radius:var(--radius-md);">
+                <h4 style="font-size:1.3rem;">Emotional</h4>
+                <p style="font-size:0.85rem;color:var(--color-text-main);">Self-awareness &bull; Confidence &bull; Managing Frustration &bull; Pausing</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================================
+         🔴 5. SECTION 3: THE PHYSICAL SPACE (DESIGNED AS THIRD TEACHER) 🔴
+         ======================================================================== -->
+    <section class="section-padding space-section" id="space">
+      <div class="container">
+        
+        <div class="section-kicker" style="color:var(--color-new-green);">
+          <span>SECTION 3: THE PHYSICAL SPACE</span>
+          <span>&bull;</span>
+          <span>INSPIRATION &amp; DESIGN</span>
+        </div>
+
+        <h2 class="section-title">
+          Designed as the <span style="color:var(--color-new-green);">&ldquo;Third Teacher&rdquo;</span>
+        </h2>
+
+        <div class="section-tagline" style="color:var(--color-rain-blue);">
+          learn play explore
+        </div>
+
+        <p class="section-lead">
+          Our physical studio prioritizes natural lighting, non-toxic materials, warm tones, modular setups, and acoustic soundproofing:
+        </p>
+
+        <!-- 4 Studio Zone Navigation Buttons -->
+        <div class="zones-nav-grid">
+          <button type="button" class="zone-tab-btn active">
+            <span style="font-size:0.75rem;font-weight:700;text-transform:uppercase;">Zone 01</span>
+            <h3 style="font-size:1.25rem;">The Create Studio</h3>
+            <p style="font-size:0.8rem;color:var(--color-text-muted);">Clay, Art &amp; Sound</p>
+          </button>
+
+          <button type="button" class="zone-tab-btn">
+            <span style="font-size:0.75rem;font-weight:700;text-transform:uppercase;">Zone 02</span>
+            <h3 style="font-size:1.25rem;">Montessori &amp; Cognitive Nook</h3>
+            <p style="font-size:0.8rem;color:var(--color-text-muted);">Self-correcting tools</p>
+          </button>
+
+          <button type="button" class="zone-tab-btn">
+            <span style="font-size:0.75rem;font-weight:700;text-transform:uppercase;">Zone 03</span>
+            <h3 style="font-size:1.25rem;">The Haven &amp; Reading</h3>
+            <p style="font-size:0.8rem;color:var(--color-text-muted);">Acoustic sanctuary</p>
+          </button>
+
+          <button type="button" class="zone-tab-btn">
+            <span style="font-size:0.75rem;font-weight:700;text-transform:uppercase;">Zone 04</span>
+            <h3 style="font-size:1.25rem;">Sensory &amp; Active Path</h3>
+            <p style="font-size:0.8rem;color:var(--color-text-muted);">Pikler frames &amp; balance</p>
+          </button>
+        </div>
+
+        <!-- Dynamic Zone Showcase Box -->
+        <div class="zone-showcase-box">
+          <div>
+            <span style="font-family:var(--font-heading);font-size:0.85rem;font-weight:700;text-transform:uppercase;color:var(--color-new-green);">
+              ARCHITECTURAL SPECIFICATION
+            </span>
+            <h3 id="zoneDisplayTitle" style="font-size:2.2rem;margin-top:4px;">The Create Studio (Clay, Art &amp; Sound)</h3>
+            <p class="font-script" id="zoneDisplayTagline" style="font-size:1.4rem;color:var(--color-wet-siana);margin-bottom:12px;">
+              "Tactile exploration where discovery matters more than perfection"
+            </p>
+            <p id="zoneDisplayDesc" style="font-size:0.95rem;color:var(--color-text-main);line-height:1.6;margin-bottom:18px;">
+              Equipped with natural terracotta clay, child-height light tables, shadow projection easels, and organic rhythm instruments. Children experiment with pigment density, form transformation, and acoustic pitch in an open, spill-friendly atelier.
+            </p>
+            <button type="button" class="btn btn-secondary" onclick="openBookingModal('Studio Walkthrough & Orientation')">
+              Book Walkthrough of This Zone &rarr;
+            </button>
+          </div>
+
+          <div style="background:#FFFFFF;padding:26px;border-radius:var(--radius-lg);border:1px solid var(--color-border);">
+            <h4 style="font-size:1.1rem;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:12px;color:var(--color-charcoal);">
+              Curated Tools &amp; Materials:
+            </h4>
+            <div id="zoneDisplayMaterials">
+              <div style="display:flex;align-items:flex-start;gap:8px;font-size:0.85rem;margin-bottom:6px;">
+                <span style="color:var(--color-rain-blue);margin-top:2px;">•</span>
+                <span>Pure earth non-toxic modeling clay &amp; carving tools</span>
+              </div>
+              <div style="display:flex;align-items:flex-start;gap:8px;font-size:0.85rem;margin-bottom:6px;">
+                <span style="color:var(--color-rain-blue);margin-top:2px;">•</span>
+                <span>Backlit sensory light tables for translucency and color mixing</span>
+              </div>
+              <div style="display:flex;align-items:flex-start;gap:8px;font-size:0.85rem;margin-bottom:6px;">
+                <span style="color:var(--color-rain-blue);margin-top:2px;">•</span>
+                <span>Rhythmic sound play with rainsticks, woodblocks &amp; Tibetan singing bowls</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================================
+         🔴 6. SECTION 4: HEALTH, SAFETY & GURGAON AQI STANDARDS 🔴
+         ======================================================================== -->
+    <section class="section-padding safety-section" id="safety">
+      <div class="container">
+        
+        <div class="section-kicker" style="color:var(--color-wet-siana);">
+          <span>SECTION 4: HEALTH, SAFETY &amp; AQI STANDARDS</span>
+          <span>&bull;</span>
+          <span>PARENT PEACE OF MIND</span>
+        </div>
+
+        <h2 class="section-title">
+          Peace of Mind for <span style="color:var(--color-wet-siana);">Every Parent</span>
+        </h2>
+
+        <div class="section-tagline" style="color:var(--color-rain-blue);">
+          learn play explore
+        </div>
+
+        <p class="section-lead">
+          In a city like Gurgaon, uncompromising environmental safety and indoor air hygiene are non-negotiable foundations for fearless, joyful child development.
+        </p>
+
+        <!-- Live AQI Commitment Banner -->
+        <div class="aqi-banner">
+          <div>
+            <div style="display:flex;align-items:center;gap:6px;font-family:var(--font-heading);font-weight:700;font-size:0.85rem;color:var(--color-new-green);text-transform:uppercase;">
+              <span>●</span> <span>INDOOR AIR PURITY COMMITMENT</span>
+            </div>
+            <h3 style="font-size:1.8rem;margin:4px 0;">Guaranteed Clean Air During Peak Winter Months</h3>
+            <p style="font-size:0.9rem;color:var(--color-text-muted);">
+              While outdoor Gurgaon AQI often surges above 400+, our commercial multi-stage HEPA filters keep indoor air below PM2.5 &lt; 25.
+            </p>
+          </div>
+
+          <div class="aqi-pill-box">
+            <span style="font-family:var(--font-heading);font-size:0.8rem;font-weight:700;text-transform:uppercase;color:var(--color-new-green-dark);">
+              INDOOR TARGET
+            </span>
+            <div style="font-family:var(--font-heading);font-size:2rem;font-weight:800;color:var(--color-new-green-dark);line-height:1;">
+              &lt; 25 PM2.5
+            </div>
+            <span style="font-size:0.75rem;color:var(--color-text-muted);">Clean Room Standard</span>
+          </div>
+        </div>
+
+        <!-- 4 Safety Pillars Grid -->
+        <div class="safety-grid">
+          
+          <div class="safety-card">
+            <div>
+              <span style="font-size:0.75rem;font-family:var(--font-heading);font-weight:700;text-transform:uppercase;background:var(--color-rain-blue-light);color:var(--color-rain-blue);padding:4px 8px;border-radius:var(--radius-sm);">
+                Winter AQI Management
+              </span>
+              <h3 style="font-size:1.6rem;margin-top:8px;">Winter AQI &amp; Air Management</h3>
+              <p style="font-size:0.9rem;color:var(--color-text-main);line-height:1.6;margin-top:6px;">
+                High-capacity commercial HEPA air filtration units maintaining optimal indoor air quality during Gurgaon winter months. Sealed double-glazed windows ensure pure airflow.
+              </p>
+            </div>
+            <div style="font-size:0.85rem;color:var(--color-text-main);border-top:1px solid var(--color-border-subtle);padding-top:10px;">
+              <div>✓ Commercial True-HEPA 14 &amp; activated carbon filters</div>
+              <div>✓ Live indoor AQI wall monitors with public visibility</div>
+            </div>
+          </div>
+
+          <div class="safety-card">
+            <div>
+              <span style="font-size:0.75rem;font-family:var(--font-heading);font-weight:700;text-transform:uppercase;background:var(--color-new-green-light);color:var(--color-new-green);padding:4px 8px;border-radius:var(--radius-sm);">
+                Hospital-Grade Hygiene
+              </span>
+              <h3 style="font-size:1.6rem;margin-top:8px;">Hygiene &amp; Sanitization</h3>
+              <p style="font-size:0.9rem;color:var(--color-text-main);line-height:1.6;margin-top:6px;">
+                Continuous cleaning schedules, UV-C light sterilization cycles for toys and loose parts, non-toxic sanitizers, and mandatory anti-skid socks for children and adults.
+              </p>
+            </div>
+            <div style="font-size:0.85rem;color:var(--color-text-main);border-top:1px solid var(--color-border-subtle);padding-top:10px;">
+              <div>✓ Nightly UV-C toy sterilization cycle</div>
+              <div>✓ 100% plant-based food-grade sanitizing solutions</div>
+            </div>
+          </div>
+
+          <div class="safety-card">
+            <div>
+              <span style="font-size:0.75rem;font-family:var(--font-heading);font-weight:700;text-transform:uppercase;background:var(--color-wet-siana-light);color:var(--color-wet-siana);padding:4px 8px;border-radius:var(--radius-sm);">
+                Architectural Retrofitting
+              </span>
+              <h3 style="font-size:1.6rem;margin-top:8px;">Child Safety Retrofitting</h3>
+              <p style="font-size:0.9rem;color:var(--color-text-main);line-height:1.6;margin-top:6px;">
+                Double-gated entry/exit points, finger-pinch guards on doors, child-proof electrical socket covers, edge guards on all furniture, and high-density EVA soft play flooring.
+              </p>
+            </div>
+            <div style="font-size:0.85rem;color:var(--color-text-main);border-top:1px solid var(--color-border-subtle);padding-top:10px;">
+              <div>✓ Magnetic airlock double gates</div>
+              <div>✓ Shock-absorbing high-density EVA foam subflooring</div>
+            </div>
+          </div>
+
+          <div class="safety-card">
+            <div>
+              <span style="font-size:0.75rem;font-family:var(--font-heading);font-weight:700;text-transform:uppercase;background:#F1F5F9;color:var(--color-charcoal);padding:4px 8px;border-radius:var(--radius-sm);">
+                24/7 Security Protocol
+              </span>
+              <h3 style="font-size:1.6rem;margin-top:8px;">Secure Access &amp; CCTV</h3>
+              <p style="font-size:0.9rem;color:var(--color-text-main);line-height:1.6;margin-top:6px;">
+                24/7 internal CCTV monitoring with strict child check-in and check-out verification protocols. Only pre-authorized caregivers are permitted hand-over clearance.
+              </p>
+            </div>
+            <div style="font-size:0.85rem;color:var(--color-text-main);border-top:1px solid var(--color-border-subtle);padding-top:10px;">
+              <div>✓ Strict guardian OTP / photo sign-in &amp; sign-out</div>
+              <div>✓ Background-verified female support staff</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================================
+         🔴 7. SECTION 5: PROGRAMS & PRICING TABLE (EDIT PRICING HERE) 🔴
+         ======================================================================== -->
+    <section class="section-padding programs-section" id="programs">
+      <div class="container">
+        
+        <div class="section-kicker" style="color:var(--color-rain-blue);">
+          <span>SECTION 5: PROGRAMS &amp; ACCESS OPTIONS</span>
+          <span>&bull;</span>
+          <span>NEIGHBORHOOD FAMILIES</span>
+        </div>
+
+        <h2 class="section-title">
+          Flexible options tailored for <span style="color:var(--color-rain-blue);">neighborhood families.</span>
+        </h2>
+
+        <div class="section-tagline" style="color:var(--color-wet-siana);">
+          learn play explore
+        </div>
+
+        <!-- 🔴 FOUNDER RECOMMENDED COMPARISON TABLE (EDIT TIERS HERE) 🔴 -->
+        <div class="table-responsive">
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th>Option</th>
+                <th>Ideal For</th>
+                <th>Schedule / Pricing</th>
+                <th style="text-align:right;">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <strong style="font-family:var(--font-heading);font-size:1.15rem;color:var(--color-charcoal);">
+                    Quarterly Pass (Tier 1–3)
+                  </strong>
+                </td>
+                <td style="color:var(--color-text-muted);">
+                  Consistent developmental growth and routine
+                </td>
+                <td>
+                  <strong>Tiered access passes (Monthly / Quarterly)</strong>
+                </td>
+                <td style="text-align:right;">
+                  <button type="button" class="btn btn-primary" style="padding:8px 16px;font-size:0.85rem;" onclick="selectProgram('Quarterly Subscription')">
+                    Select Pass
+                  </button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <strong style="font-family:var(--font-heading);font-size:1.15rem;color:var(--color-charcoal);">
+                    Pay-as-you-Go Walk-In
+                  </strong>
+                </td>
+                <td style="color:var(--color-text-muted);">
+                  Flexible drop-in play for busy schedules
+                </td>
+                <td>
+                  <strong style="color:var(--color-wet-siana);">₹1,500 / 1-hour session</strong>
+                </td>
+                <td style="text-align:right;">
+                  <button type="button" class="btn btn-sienna" style="padding:8px 16px;font-size:0.85rem;" onclick="selectProgram('Drop-in')">
+                    Book Walk-In
+                  </button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <strong style="font-family:var(--font-heading);font-size:1.15rem;color:var(--color-charcoal);">
+                    10-Session Punch Pass
+                  </strong>
+                </td>
+                <td style="color:var(--color-text-muted);">
+                  Flex-visits valid for 60 days
+                </td>
+                <td>
+                  <strong style="color:var(--color-new-green-dark);">₹13,000 (valid 60 days)</strong>
+                </td>
+                <td style="text-align:right;">
+                  <button type="button" class="btn btn-green" style="padding:8px 16px;font-size:0.85rem;" onclick="selectProgram('10-Session Punch Pass')">
+                    Buy 10-Pass
+                  </button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <strong style="font-family:var(--font-heading);font-size:1.15rem;color:var(--color-charcoal);">
+                    Weekend Workshops
+                  </strong>
+                </td>
+                <td style="color:var(--color-text-muted);">
+                  Deep-dive sensory art, clay, and theme sessions
+                </td>
+                <td>
+                  <strong>Dedicated weekend slots, ₹2,000 / session</strong>
+                </td>
+                <td style="text-align:right;">
+                  <button type="button" class="btn btn-secondary" style="padding:8px 16px;font-size:0.85rem;" onclick="selectProgram('Weekend Workshops')">
+                    Reserve Workshop
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 4 Detailed Pricing Cards -->
+        <div class="pricing-cards-grid">
+          
+          <div class="pricing-card popular">
+            <div>
+              <span style="font-size:0.75rem;font-weight:700;font-family:var(--font-heading);text-transform:uppercase;background:var(--color-rain-blue-light);color:var(--color-rain-blue);padding:4px 8px;border-radius:var(--radius-sm);">
+                Most Recommended
+              </span>
+              <h3 style="font-size:1.5rem;margin-top:8px;">Quarterly Pass (Tier 1–3)</h3>
+              <p style="font-size:0.85rem;color:var(--color-text-muted);">Consistent developmental routine</p>
+              
+              <div style="margin:16px 0;padding-bottom:14px;border-bottom:1px solid var(--color-border-subtle);">
+                <div style="font-family:var(--font-heading);font-size:1.8rem;font-weight:800;color:var(--color-charcoal);">
+                  Tiered Passes
+                </div>
+                <span style="font-size:0.75rem;color:var(--color-text-muted);">Monthly or Quarterly Rhythms</span>
+              </div>
+
+              <div style="font-size:0.85rem;line-height:1.6;">
+                <div>✓ Dedicated educator observation logs</div>
+                <div>✓ Max 8 children per cohort</div>
+                <div>✓ Full access to all 4 studio zones</div>
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-primary" style="width:100%;" onclick="selectProgram('Quarterly Subscription')">
+              Select Quarterly Pass
+            </button>
+          </div>
+
+          <div class="pricing-card">
+            <div>
+              <span style="font-size:0.75rem;font-weight:700;font-family:var(--font-heading);text-transform:uppercase;background:var(--color-wet-siana-light);color:var(--color-wet-siana);padding:4px 8px;border-radius:var(--radius-sm);">
+                Pay-As-You-Go
+              </span>
+              <h3 style="font-size:1.5rem;margin-top:8px;">Walk-In Session</h3>
+              <p style="font-size:0.85rem;color:var(--color-text-muted);">Flexible drop-in for busy schedules</p>
+              
+              <div style="margin:16px 0;padding-bottom:14px;border-bottom:1px solid var(--color-border-subtle);">
+                <div style="font-family:var(--font-heading);font-size:1.8rem;font-weight:800;color:var(--color-wet-siana);">
+                  ₹1,500
+                </div>
+                <span style="font-size:0.75rem;color:var(--color-text-muted);">Per 1-Hour Session</span>
+              </div>
+
+              <div style="font-size:0.85rem;line-height:1.6;">
+                <div>✓ Full immersion in Create &amp; Haven zones</div>
+                <div>✓ All natural loose parts included</div>
+                <div>✓ Certified Montessori facilitation</div>
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-sienna" style="width:100%;" onclick="selectProgram('Drop-in')">
+              Book Walk-In (₹1,500)
+            </button>
+          </div>
+
+          <div class="pricing-card">
+            <div>
+              <span style="font-size:0.75rem;font-weight:700;font-family:var(--font-heading);text-transform:uppercase;background:var(--color-new-green-light);color:var(--color-new-green);padding:4px 8px;border-radius:var(--radius-sm);">
+                Save ₹2,000
+              </span>
+              <h3 style="font-size:1.5rem;margin-top:8px;">10-Session Punch Pass</h3>
+              <p style="font-size:0.85rem;color:var(--color-text-muted);">Flex-visits valid for 60 days</p>
+              
+              <div style="margin:16px 0;padding-bottom:14px;border-bottom:1px solid var(--color-border-subtle);">
+                <div style="font-family:var(--font-heading);font-size:1.8rem;font-weight:800;color:var(--color-new-green-dark);">
+                  ₹13,000
+                </div>
+                <span style="font-size:0.75rem;color:var(--color-text-muted);">Total (₹1,300 per session)</span>
+              </div>
+
+              <div style="font-size:0.85rem;line-height:1.6;">
+                <div>✓ Valid for 60 calendar days</div>
+                <div>✓ Sibling shareable (ages 1.5–6)</div>
+                <div>✓ Easy WhatsApp session booking</div>
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-green" style="width:100%;" onclick="selectProgram('10-Session Punch Pass')">
+              Buy 10-Pass (₹13,000)
+            </button>
+          </div>
+
+          <div class="pricing-card">
+            <div>
+              <span style="font-size:0.75rem;font-weight:700;font-family:var(--font-heading);text-transform:uppercase;background:#F1F5F9;color:var(--color-charcoal);padding:4px 8px;border-radius:var(--radius-sm);">
+                Signature Masterclass
+              </span>
+              <h3 style="font-size:1.5rem;margin-top:8px;">Weekend Workshops</h3>
+              <p style="font-size:0.85rem;color:var(--color-text-muted);">Intensive clay, paper &amp; inquiry</p>
+              
+              <div style="margin:16px 0;padding-bottom:14px;border-bottom:1px solid var(--color-border-subtle);">
+                <div style="font-family:var(--font-heading);font-size:1.8rem;font-weight:800;color:var(--color-charcoal);">
+                  ₹2,000
+                </div>
+                <span style="font-size:0.75rem;color:var(--color-text-muted);">Per Dedicated Session</span>
+              </div>
+
+              <div style="font-size:0.85rem;line-height:1.6;">
+                <div>✓ "How The Mind Works" (Mrs. Nita)</div>
+                <div>✓ "Art of Paper" (Mr. Raju)</div>
+                <div>✓ Premium washi &amp; clay included</div>
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-secondary" style="width:100%;" onclick="selectProgram('Weekend Workshops')">
+              Reserve Workshop
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================================
+         🔴 8. SECTION 6: SIGN-UP & REGISTRATION (EDIT FORM FIELDS HERE) 🔴
+         ======================================================================== -->
+    <section class="section-padding contact-section" id="contact">
+      <div class="container">
+        
+        <div class="section-kicker" style="color:var(--color-rain-blue);">
+          <span>SECTION 6: REGISTRATION &amp; VISITS</span>
+          <span>&bull;</span>
+          <span>GURGAON STUDIO</span>
+        </div>
+
+        <h2 class="section-title">
+          Join the Community / <span style="color:var(--color-rain-blue);">Register Your Interest</span>
+        </h2>
+
+        <div class="section-tagline" style="color:var(--color-wet-siana);">
+          learn play explore
+        </div>
+
+        <p class="section-lead">
+          Bring your child for an experiential tour or sign up for a session. Cohorts are strictly capped at 8 children.
+        </p>
+
+        <div class="contact-layout-grid">
+          
+          <!-- Registration Form Card -->
+          <div class="registration-card">
+            
+            <!-- Success Confirmation State -->
+            <div id="formSuccessBox" style="display:none;text-align:center;padding:40px 10px;">
+              <div style="font-size:3rem;margin-bottom:12px;">🎉</div>
+              <h3 style="font-size:2.2rem;margin-bottom:6px;">Thank You, <span id="registeredParentName">Parent</span>!</h3>
+              <p class="font-script" style="font-size:1.5rem;color:var(--color-rain-blue);margin-bottom:14px;">
+                learn play explore
+              </p>
+              <p style="font-size:0.95rem;color:var(--color-text-main);max-width:480px;margin:0 auto 20px;line-height:1.6;">
+                We have received your registration. Our studio concierge will contact you via phone or WhatsApp within 24 hours to schedule your preferred orientation slot.
+              </p>
+              <button type="button" class="btn btn-primary" onclick="resetRegistrationForm()">
+                Register Another Sibling / Session
+              </button>
+            </div>
+
+            <!-- Form Fields Prescribed by Founders -->
+            <form id="registrationForm">
+              
+              <div class="form-grid-2">
+                <div class="form-group">
+                  <label for="parentName" class="form-label">Parent's Full Name *</label>
+                  <input type="text" id="parentName" class="form-control" placeholder="e.g. Shipra or Rahul" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="parentPhone" class="form-label">Contact Phone / WhatsApp *</label>
+                  <input type="tel" id="parentPhone" class="form-control" placeholder="e.g. 9871350426" required>
+                </div>
+              </div>
+
+              <div class="form-grid-2">
+                <div class="form-group">
+                  <label for="parentEmail" class="form-label">Email Address *</label>
+                  <input type="email" id="parentEmail" class="form-control" placeholder="name@example.com" required>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">Child's Name &amp; Age (1.5 to 6) *</label>
+                  <div style="display:grid;grid-template-columns:1.5fr 1fr;gap:8px;">
+                    <input type="text" id="childName" class="form-control" placeholder="Child's Name" required>
+                    <select id="childAge" class="form-control" style="font-family:var(--font-heading);font-weight:700;">
+                      <option value="1.5">1.5 Yrs</option>
+                      <option value="2">2 Yrs</option>
+                      <option value="2.5">2.5 Yrs</option>
+                      <option value="3" selected>3 Yrs</option>
+                      <option value="3.5">3.5 Yrs</option>
+                      <option value="4">4 Yrs</option>
+                      <option value="5">5 Yrs</option>
+                      <option value="6">6 Yrs</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Location Dropdown -->
+              <div class="form-group">
+                <label for="preferredLocation" class="form-label">Preferred Location / Partner Facility *</label>
+                <select id="preferredLocation" class="form-control">
+                  <option value="Golf Course Road Studio (Flagship)">Golf Course Road Studio (Flagship Sanctuary)</option>
+                  <option value="DLF Phase 5 Neighborhood Hub">DLF Phase 5 Neighborhood Hub (Partner Facility)</option>
+                  <option value="Sohna Road Partner Clubhouse">Sohna Road Partner Clubhouse Studio</option>
+                  <option value="Nirvana Country / South City II Center">Nirvana Country / South City II Center</option>
+                </select>
+              </div>
+
+              <!-- Program Interest Checkboxes -->
+              <div class="form-group">
+                <label class="form-label">Program Interest * (Select all that apply)</label>
+                <div class="checkbox-group-grid">
+                  <div class="checkbox-card" data-program="Quarterly Subscription">
+                    <input type="checkbox" id="checkQuarterly" value="Quarterly Subscription">
+                    <div>
+                      <strong style="font-size:0.85rem;display:block;">Quarterly Subscription</strong>
+                      <span style="font-size:0.75rem;color:var(--color-text-muted);">Consistent developmental growth</span>
+                    </div>
+                  </div>
+
+                  <div class="checkbox-card" data-program="10-Session Punch Pass">
+                    <input type="checkbox" id="checkPunch" value="10-Session Punch Pass">
+                    <div>
+                      <strong style="font-size:0.85rem;display:block;">10-Session Punch Pass</strong>
+                      <span style="font-size:0.75rem;color:var(--color-text-muted);">Flex-visits valid for 60 days</span>
+                    </div>
+                  </div>
+
+                  <div class="checkbox-card selected" data-program="Drop-in">
+                    <input type="checkbox" id="checkDropin" value="Drop-in" checked>
+                    <div>
+                      <strong style="font-size:0.85rem;display:block;">Drop-in (₹1,500)</strong>
+                      <span style="font-size:0.75rem;color:var(--color-text-muted);">Flexible 1-hour session</span>
+                    </div>
+                  </div>
+
+                  <div class="checkbox-card" data-program="Weekend Workshops">
+                    <input type="checkbox" id="checkWorkshop" value="Weekend Workshops">
+                    <div>
+                      <strong style="font-size:0.85rem;display:block;">Weekend Workshops (₹2,000)</strong>
+                      <span style="font-size:0.75rem;color:var(--color-text-muted);">Deep-dive sensory art &amp; paper</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- How did you hear about us? Dropdown -->
+              <div class="form-group">
+                <label for="referralSource" class="form-label">How did you hear about us? *</label>
+                <select id="referralSource" class="form-control">
+                  <option value="Word of Mouth / Parent Recommendation">Word of Mouth / Parent Recommendation</option>
+                  <option value="Preschool / Nursery Educator">Preschool / Nursery Educator</option>
+                  <option value="Instagram / Social Media">Instagram / Social Media</option>
+                  <option value="Gurgaon RWA / Society Community Group">Gurgaon RWA / Society Community Group</option>
+                  <option value="Google Search">Google Search</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+
+              <!-- Submit Button Prescribed by Founders -->
+              <button type="submit" class="btn btn-primary" style="width:100%;padding:14px;">
+                Submit &amp; Reserve Slot
+              </button>
+
+            </form>
+          </div>
+
+          <!-- Studio Concierge Sidebar -->
+          <div style="display:flex;flex-direction:column;gap:20px;">
+            <div style="background:var(--color-canvas-bg);padding:30px;border-radius:var(--radius-xl);border:1px solid var(--color-border);">
+              <h3 style="font-size:1.4rem;margin-bottom:14px;">Gurgaon Studio Concierge</h3>
+              
+              <div style="display:flex;flex-direction:column;gap:14px;font-size:0.9rem;">
+                <div>
+                  <span style="font-family:var(--font-heading);font-weight:700;font-size:0.8rem;color:var(--color-text-muted);text-transform:uppercase;">
+                    Direct Phone / WhatsApp
+                  </span>
+                  <div style="font-weight:700;font-size:1.1rem;color:var(--color-charcoal);">+91 9871350426</div>
+                </div>
+
+                <div>
+                  <span style="font-family:var(--font-heading);font-weight:700;font-size:0.8rem;color:var(--color-text-muted);text-transform:uppercase;">
+                    Email
+                  </span>
+                  <div style="font-weight:600;color:var(--color-charcoal);">workshop@pitterpatterstudio.in</div>
+                </div>
+
+                <div>
+                  <span style="font-family:var(--font-heading);font-weight:700;font-size:0.8rem;color:var(--color-text-muted);text-transform:uppercase;">
+                    Studio Hours
+                  </span>
+                  <div>Mon–Sat: 9:00 AM – 6:30 PM</div>
+                  <div style="font-size:0.8rem;color:var(--color-text-muted);">Sun: Dedicated Weekend Workshops</div>
+                </div>
+
+                <div>
+                  <span style="font-family:var(--font-heading);font-weight:700;font-size:0.8rem;color:var(--color-text-muted);text-transform:uppercase;">
+                    Location
+                  </span>
+                  <div>Golf Course Road Studio (Flagship)</div>
+                  <div style="font-size:0.8rem;color:var(--color-text-muted);">Dedicated stroller parking &amp; secure check-in</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Download Brochure Widget -->
+            <div style="background:var(--color-rain-blue-light);padding:26px;border-radius:var(--radius-xl);border:1px solid rgba(79, 156, 248, 0.2);">
+              <h4 style="font-size:1.25rem;color:var(--color-charcoal);margin-bottom:6px;">Need Full Curriculum Details?</h4>
+              <p style="font-size:0.85rem;color:var(--color-text-main);margin-bottom:14px;">
+                Download our complete studio dossier including AQI specs and schedule grids.
+              </p>
+              <button type="button" class="btn btn-secondary" style="width:100%;font-size:0.85rem;" onclick="openBrochureModal()">
+                📥 Download Brochure (PDF)
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 🔴 TESTIMONIALS OR WHAT PARENTS HAVE TO SAY 🔴 -->
+        <div style="margin-top:60px;padding-top:40px;border-top:1px solid var(--color-border);">
+          <span style="font-family:var(--font-heading);font-size:0.85rem;font-weight:700;text-transform:uppercase;color:var(--color-wet-siana);">
+            COMMUNITY VOICES
+          </span>
+          <h3 style="font-size:2.2rem;margin-top:4px;">Testimonials or What Parents Have to Say</h3>
+
+          <div class="testimonials-grid">
+            
+            <div class="testimonial-card">
+              <p style="font-size:0.9rem;line-height:1.6;font-style:italic;">
+                &ldquo;During Gurgaon’s smoggy winter, finding a space where the indoor AQI is monitored and kept strictly under 25 was an answered prayer. But beyond the air quality, the Intrapersonal Haven gave my shy toddler room to breathe and observe without being pressured to perform. Unmatched in the city.&rdquo;
+              </p>
+              <div>
+                <strong style="font-family:var(--font-heading);font-size:1.1rem;display:block;">Rhea Sengupta</strong>
+                <span style="font-size:0.75rem;color:var(--color-rain-blue);font-weight:600;">Mother of Kabir (3.5 yrs) &bull; DLF Phase 5</span>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <p style="font-size:0.9rem;line-height:1.6;font-style:italic;">
+                &ldquo;We were tired of commercial soft-play centers with noisy arcade games and synthetic plastic ball pits. Pitter Patter Studio is a true Reggio-Montessori sanctuary: solid beechwood, natural clay, real loose parts, and educators who genuinely observe your child.&rdquo;
+              </p>
+              <div>
+                <strong style="font-family:var(--font-heading);font-size:1.1rem;display:block;">Ananya &amp; Vikram Malik</strong>
+                <span style="font-size:0.75rem;color:var(--color-rain-blue);font-weight:600;">Parents of Tara (2.5 yrs) &bull; Golf Course Ext.</span>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <p style="font-size:0.9rem;line-height:1.6;font-style:italic;">
+                &ldquo;Swati’s 25 years of pedagogy background shows in every single detail. The facilitators do not dictate what a child must make. My son explored shadow projection and origami folds for an hour with zero distractions. The 10-session punch pass gives us complete flexibility.&rdquo;
+              </p>
+              <div>
+                <strong style="font-family:var(--font-heading);font-size:1.1rem;display:block;">Karan Mehra</strong>
+                <span style="font-size:0.75rem;color:var(--color-rain-blue);font-weight:600;">Father of Ayaan (4 yrs) &bull; Sohna Road</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ========================================================================
+       🔴 9. FOOTER 🔴
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-grid">
+        
+        <div>
+          <!-- 🔴 CHANGE YOUR LOGO PATH BELOW THIS LINE 🔴 -->
+          <img src="images/logo.svg" alt="Pitter Patter Studio" style="height:44px;width:auto;margin-bottom:14px;filter:brightness(0) invert(1);">
+          <p style="font-size:0.85rem;line-height:1.6;max-width:320px;margin-bottom:14px;">
+            A mindful, child-led early learning and play studio in Gurgaon. Merging process-focused art, sensory integration, and Montessori-inspired exploration for ages 1.5 to 6.
+          </p>
+          <div style="font-size:0.75rem;border-left:2px solid var(--color-wet-siana);padding-left:10px;">
+            <strong style="color:#FFFFFF;">Founder Credibility:</strong> Led by Shipra (15 yrs Corporate Strategy &amp; CX) and Swati (25 yrs Early Childhood Pedagogy, Ex-KLAY Regional Head).
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#philosophy">Our Philosophy</a></li>
+            <li><a href="#space">The Physical Space</a></li>
+            <li><a href="#programs">Programs &amp; Options</a></li>
+            <li><a href="#safety">Safety &amp; Standards</a></li>
+            <li><a href="#contact">Join the Community</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Access Options</h4>
+          <ul class="footer-links">
+            <li><a href="#programs">Quarterly Pass</a></li>
+            <li><a href="#programs">Walk-In (₹1,500)</a></li>
+            <li><a href="#programs">10-Session Pass (₹13,000)</a></li>
+            <li><a href="#programs">Weekend Workshops (₹2,000)</a></li>
+            <li><a href="#safety">Gurgaon Winter AQI</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Brand Palette &amp; Visit</h4>
+          <p style="font-size:0.8rem;margin-bottom:10px;">
+            The Rain Blue &bull; Wet Land Siana &bull; New Grow Green
+          </p>
+          <div style="font-size:0.85rem;line-height:1.6;">
+            Gurgaon Studios: Golf Course Road &amp; Partner Facilities<br>
+            Phone: +91 9871350426<br>
+            workshop@pitterpatterstudio.in
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="yearCopy">2026</span> Pitter Patter Studio Gurgaon. All rights reserved. &bull; <em>learn play explore</em>
+        </div>
+        <a href="#hero" style="color:var(--color-rain-blue);font-weight:700;">
+          Back to Top &uarr;
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ========================================================================
+       🔴 10. MODAL DIALOGS (BOOKING & BROCHURE DOWNLOAD) 🔴
+       ======================================================================== -->
+
+  <!-- Booking Modal -->
+  <div class="modal-overlay" id="bookingModal" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn" onclick="closeBookingModal()" aria-label="Close modal">&times;</button>
+      
+      <div id="modalBookingSuccess" style="display:none;text-align:center;padding:24px 0;">
+        <div style="font-size:2.5rem;margin-bottom:8px;">✅</div>
+        <h3 style="font-size:1.8rem;margin-bottom:4px;">Visit Slot Requested!</h3>
+        <p class="font-script" style="font-size:1.3rem;color:var(--color-rain-blue);margin-bottom:10px;">learn play explore</p>
+        <p style="font-size:0.85rem;color:var(--color-text-main);margin-bottom:18px;">
+          We will contact you via WhatsApp or phone to confirm your preferred timing.
+        </p>
+        <button type="button" class="btn btn-primary" onclick="closeBookingModal()">Done</button>
+      </div>
+
+      <form id="modalBookingForm">
+        <h3 style="font-size:1.8rem;margin-bottom:2px;">Book a Visit / Reserve a Slot</h3>
+        <p style="font-size:0.8rem;color:var(--color-text-muted);margin-bottom:16px;">
+          Experience our AQI-filtered sanctuary, process art atelier, and child-led play zones.
+        </p>
+
+        <div class="form-group">
+          <label class="form-label">Parent Name *</label>
+          <input type="text" class="form-control" required placeholder="Your Name">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Phone / WhatsApp *</label>
+          <input type="tel" class="form-control" required placeholder="9871350426">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Email Address *</label>
+          <input type="email" class="form-control" required placeholder="name@example.com">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Child's Name &amp; Age</label>
+          <input type="text" class="form-control" placeholder="Child Name &amp; Age (e.g. Kabir, 3 yrs)">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Program Option</label>
+          <select id="modalProgramSelect" class="form-control">
+            <option value="Studio Visit & Experiential Tour">Studio Walkthrough (Free)</option>
+            <option value="Pay-as-you-Go Walk-In">Pay-as-you-Go Walk-In (₹1,500)</option>
+            <option value="Quarterly Pass Subscription">Quarterly Pass Subscription</option>
+            <option value="10-Session Punch Pass">10-Session Punch Pass (₹13,000)</option>
+            <option value="Weekend Workshops">Weekend Workshops (₹2,000)</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:100%;margin-top:8px;">
+          Reserve Studio Slot
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Brochure Download Modal -->
+  <div class="modal-overlay" id="brochureModal" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn" onclick="closeBrochureModal()" aria-label="Close modal">&times;</button>
+      
+      <div id="modalBrochureSuccess" style="display:none;text-align:center;padding:24px 0;">
+        <div style="font-size:2.5rem;margin-bottom:8px;">📥</div>
+        <h3 style="font-size:1.8rem;margin-bottom:4px;">Brochure Dispatched!</h3>
+        <p class="font-script" style="font-size:1.3rem;color:var(--color-rain-blue);margin-bottom:10px;">learn play explore</p>
+        <p style="font-size:0.85rem;color:var(--color-text-main);margin-bottom:18px;">
+          The complete Pitter Patter Studio Information Kit has been dispatched to your email and WhatsApp.
+        </p>
+        <button type="button" class="btn btn-primary" onclick="closeBrochureModal()">Close Window</button>
+      </div>
+
+      <form id="modalBrochureForm">
+        <h3 style="font-size:1.8rem;margin-bottom:2px;">Download Studio Information Brochure</h3>
+        <p style="font-size:0.8rem;color:var(--color-text-muted);margin-bottom:16px;">
+          Receive our complete pedagogical dossier, air filtration standards, and program fee guide.
+        </p>
+
+        <div class="form-group">
+          <label class="form-label">Parent Full Name *</label>
+          <input type="text" class="form-control" required placeholder="Your Name">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Email Address *</label>
+          <input type="email" class="form-control" required placeholder="name@example.com">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Phone / WhatsApp *</label>
+          <input type="tel" class="form-control" required placeholder="9871350426">
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:100%;margin-top:8px;">
+          Download Studio Brochure
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- 🔴 VANILLA JAVASCRIPT LOGIC (NO FRAMEWORKS REQUIRED) 🔴 -->
+  <script src="./script.js"></script>
+</body>
+</html>

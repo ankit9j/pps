@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 90" fill="none" width="340" height="90">
+  <!-- 🔴 PITTER PATTER STUDIO - OFFICIAL VECTOR BRAND LOGO 🔴 -->
+  <!-- Curled 'O' Smiling Brand Mark -->
+  <g transform="translate(10, 8)">
+    <path d="M54.4 29.2C51.6 21.6 44.4 16.4 36 16.4C22.96 16.4 12.4 26.96 12.4 40C12.4 53.04 22.96 63.6 36 63.6C49.04 63.6 59.6 53.04 59.6 40C59.6 36.16 58.64 32.56 56.96 29.44C55.6 26.96 57.44 24 60.24 24C66.8 24 69.6 18.8 68.8 12.8C58.4 13.6 55.2 17.6 54.4 29.2Z" fill="#4F9CF8"/>
+    <circle cx="36" cy="40" r="14.8" fill="#FFFFFF"/>
+    <!-- Smiling Eyes -->
+    <path d="M30 36.4C30 34.4 32.4 32.8 34.8 34.4C35.2 34.64 35 36.64 33.6 36.64C31.6 36.64 30.4 36.64 30 36.4Z" fill="#4F9CF8"/>
+    <path d="M38.8 34.4C41.2 32.8 43.6 34.4 43.6 36.4C43.2 36.64 42 36.64 40 36.64C38.56 36.64 38.4 34.64 38.8 34.4Z" fill="#4F9CF8"/>
+    <!-- Friendly Mouth -->
+    <path d="M32 41.6C33.6 44.8 38.4 44.8 40 41.6" stroke="#4F9CF8" stroke-width="2.3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Stencil Cut Logotype: PITTER PATTER STUDIO -->
+  <text x="88" y="27" font-family="'Barlow Condensed', 'Myriad Pro Condensed', sans-serif" font-weight="700" font-size="21" fill="#1E232B" letter-spacing="1.5">PITTER</text>
+  <text x="88" y="47" font-family="'Barlow Condensed', 'Myriad Pro Condensed', sans-serif" font-weight="700" font-size="21" fill="#1E232B" letter-spacing="1.5">PATTER</text>
+  <text x="88" y="67" font-family="'Barlow Condensed', 'Myriad Pro Condensed', sans-serif" font-weight="700" font-size="21" fill="#1E232B" letter-spacing="1.5">STUDIO</text>
+
+  <!-- Tagline Script: learn play explore -->
+  <text x="88" y="82" font-family="'Caveat', cursive" font-weight="600" font-size="16" fill="#B8433C">learn play explore</text>
+</svg>

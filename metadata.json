@@ -1,0 +1,8 @@
+{
+  "name": "Pitter Patter Studio - Children's Play & Learning Center",
+  "description": "Thoughtful by nature, playful by design. A welcoming, responsive play and early learning center for children aged 1-6 years.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
