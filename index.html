@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pitter Patter Studio - Child-Led Early Learning & Play Studio in Gurgaon</title>
+  <title>Pitter Patter Studio - Child-Led Early Learning &amp; Play Studio in Gurgaon</title>
   <meta name="description" content="A mindful, child-led early learning and play studio in Gurgaon for ages 1.5 to 6. Merging process-focused art, sensory integration, and Montessori-inspired exploration in safe, AQI-controlled sanctuary environments.">
   
   <!-- 🔴 FAVICON CONFIGURATION (REPLACE WITH YOUR FAVICON) 🔴 -->
@@ -49,7 +49,7 @@
         </button>
 
         <!-- Mobile Menu Toggle Button -->
-        <button type="button" class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Navigation">
+        <button type="button" class="mobile-menu-toggle" id="mobileMenuToggle" onclick="toggleMobileMenu()" aria-label="Toggle Navigation">
           <span></span>
           <span></span>
           <span></span>
@@ -61,17 +61,17 @@
     <!-- Mobile Drawer -->
     <div class="mobile-nav-drawer" id="mobileNavDrawer">
       <div class="mobile-nav-links">
-        <a href="#about" class="mobile-nav-link">About Us</a>
-        <a href="#philosophy" class="mobile-nav-link">Our Philosophy</a>
-        <a href="#space" class="mobile-nav-link">The Physical Space</a>
-        <a href="#programs" class="mobile-nav-link">Programs &amp; Options</a>
-        <a href="#safety" class="mobile-nav-link">Safety &amp; Standards</a>
+        <a href="#about" class="mobile-nav-link" onclick="toggleMobileMenu()">About Us</a>
+        <a href="#philosophy" class="mobile-nav-link" onclick="toggleMobileMenu()">Our Philosophy</a>
+        <a href="#space" class="mobile-nav-link" onclick="toggleMobileMenu()">The Physical Space</a>
+        <a href="#programs" class="mobile-nav-link" onclick="toggleMobileMenu()">Programs &amp; Options</a>
+        <a href="#safety" class="mobile-nav-link" onclick="toggleMobileMenu()">Safety &amp; Standards</a>
       </div>
       <div style="display:flex;flex-direction:column;gap:10px;">
         <a href="tel:+919871350426" class="btn btn-secondary" style="width:100%;">
           📞 Call Studio: +91 9871350426
         </a>
-        <button type="button" class="btn btn-primary" style="width:100%;" onclick="openBookingModal('Studio Visit & Experiential Tour')">
+        <button type="button" class="btn btn-primary" style="width:100%;" onclick="openBookingModal('Studio Visit &amp; Experiential Tour'); toggleMobileMenu();">
           Book a Visit / Reserve Slot
         </button>
       </div>
@@ -130,7 +130,7 @@
 
           <!-- 🔴 PRIMARY & SECONDARY HERO CTAS 🔴 -->
           <div class="hero-cta-group">
-            <button type="button" class="btn btn-primary" onclick="openBookingModal('Studio Visit & Experiential Tour')">
+            <button type="button" class="btn btn-primary" onclick="openBookingModal('Studio Visit &amp; Experiential Tour')">
               Book a Visit / Reserve a Slot &rarr;
             </button>
             <button type="button" class="btn btn-secondary" onclick="openBrochureModal()">
@@ -162,11 +162,11 @@
               <span class="font-script" style="color:var(--color-rain-blue);font-size:1.2rem;font-weight:700;">Child-Led</span>
             </div>
 
-            <!-- Age Switcher Buttons -->
+            <!-- Age Switcher Buttons with explicit onclick handlers -->
             <div class="hero-age-switcher">
-              <button type="button" class="hero-age-btn" data-age="1.5-2.5">1.5–2.5 Yrs</button>
-              <button type="button" class="hero-age-btn active" data-age="2.5-4">2.5–4 Yrs</button>
-              <button type="button" class="hero-age-btn" data-age="4-6">4–6 Yrs</button>
+              <button type="button" class="hero-age-btn" id="btnAge1" onclick="switchAgeTier('1.5-2.5')">1.5–2.5 Yrs</button>
+              <button type="button" class="hero-age-btn active" id="btnAge2" onclick="switchAgeTier('2.5-4')">2.5–4 Yrs</button>
+              <button type="button" class="hero-age-btn" id="btnAge3" onclick="switchAgeTier('4-6')">4–6 Yrs</button>
             </div>
 
             <!-- Dynamic Box for Selected Age -->
@@ -193,7 +193,7 @@
 
             <div style="display:flex;justify-content:space-between;align-items:center;font-size:0.8rem;color:var(--color-text-muted);padding-top:10px;border-top:1px solid var(--color-border-subtle);">
               <span>Small cohorts (Max 8 children)</span>
-              <button type="button" style="color:var(--color-rain-blue);font-weight:700;" onclick="openBookingModal('Studio Visit & Experiential Tour')">
+              <button type="button" style="color:var(--color-rain-blue);font-weight:700;" onclick="openBookingModal('Studio Visit &amp; Experiential Tour')">
                 Schedule Walkthrough &rarr;
               </button>
             </div>
@@ -372,7 +372,7 @@
 
 
     <!-- ========================================================================
-         🔴 4. SECTION 2: OUR PHILOSOPHY (CHILD-LED & FRAMEWORKS) 🔴
+         🔴 4. SECTION 2: OUR PHILOSOPHY (CHILD-LED &amp; FRAMEWORKS) 🔴
          ======================================================================== -->
     <section class="section-padding philosophy-section" id="philosophy">
       <div class="container">
@@ -395,15 +395,15 @@
           We operate at the sweet spot between unstructured play and intentional design &mdash; giving children freedom within a safe, thoughtfully curated environment.
         </p>
 
-        <!-- Interactive Tab Buttons -->
+        <!-- Interactive Tab Buttons with explicit onclick handlers -->
         <div class="tab-nav-bar">
-          <button type="button" class="tab-nav-btn active" data-target="tabSpaceWorks">
+          <button type="button" class="tab-nav-btn active" id="tabBtn1" onclick="switchPhilosophyTab('tabSpaceWorks', this)">
             How Our Space Works (3 Sanctuaries)
           </button>
-          <button type="button" class="tab-nav-btn" data-target="tabFrameworks">
+          <button type="button" class="tab-nav-btn" id="tabBtn2" onclick="switchPhilosophyTab('tabFrameworks', this)">
             Global Learning Frameworks
           </button>
-          <button type="button" class="tab-nav-btn" data-target="tabDimensions">
+          <button type="button" class="tab-nav-btn" id="tabBtn3" onclick="switchPhilosophyTab('tabDimensions', this)">
             6 Developmental Dimensions
           </button>
         </div>
@@ -590,27 +590,27 @@
           Our physical studio prioritizes natural lighting, non-toxic materials, warm tones, modular setups, and acoustic soundproofing:
         </p>
 
-        <!-- 4 Studio Zone Navigation Buttons -->
+        <!-- 4 Studio Zone Navigation Buttons with explicit onclick handlers -->
         <div class="zones-nav-grid">
-          <button type="button" class="zone-tab-btn active">
+          <button type="button" class="zone-tab-btn active" id="zoneBtn0" onclick="switchZone(0, this)">
             <span style="font-size:0.75rem;font-weight:700;text-transform:uppercase;">Zone 01</span>
             <h3 style="font-size:1.25rem;">The Create Studio</h3>
             <p style="font-size:0.8rem;color:var(--color-text-muted);">Clay, Art &amp; Sound</p>
           </button>
 
-          <button type="button" class="zone-tab-btn">
+          <button type="button" class="zone-tab-btn" id="zoneBtn1" onclick="switchZone(1, this)">
             <span style="font-size:0.75rem;font-weight:700;text-transform:uppercase;">Zone 02</span>
             <h3 style="font-size:1.25rem;">Montessori &amp; Cognitive Nook</h3>
             <p style="font-size:0.8rem;color:var(--color-text-muted);">Self-correcting tools</p>
           </button>
 
-          <button type="button" class="zone-tab-btn">
+          <button type="button" class="zone-tab-btn" id="zoneBtn2" onclick="switchZone(2, this)">
             <span style="font-size:0.75rem;font-weight:700;text-transform:uppercase;">Zone 03</span>
             <h3 style="font-size:1.25rem;">The Haven &amp; Reading</h3>
             <p style="font-size:0.8rem;color:var(--color-text-muted);">Acoustic sanctuary</p>
           </button>
 
-          <button type="button" class="zone-tab-btn">
+          <button type="button" class="zone-tab-btn" id="zoneBtn3" onclick="switchZone(3, this)">
             <span style="font-size:0.75rem;font-weight:700;text-transform:uppercase;">Zone 04</span>
             <h3 style="font-size:1.25rem;">Sensory &amp; Active Path</h3>
             <p style="font-size:0.8rem;color:var(--color-text-muted);">Pikler frames &amp; balance</p>
@@ -630,7 +630,7 @@
             <p id="zoneDisplayDesc" style="font-size:0.95rem;color:var(--color-text-main);line-height:1.6;margin-bottom:18px;">
               Equipped with natural terracotta clay, child-height light tables, shadow projection easels, and organic rhythm instruments. Children experiment with pigment density, form transformation, and acoustic pitch in an open, spill-friendly atelier.
             </p>
-            <button type="button" class="btn btn-secondary" onclick="openBookingModal('Studio Walkthrough & Orientation')">
+            <button type="button" class="btn btn-secondary" onclick="openBookingModal('Studio Walkthrough &amp; Orientation')">
               Book Walkthrough of This Zone &rarr;
             </button>
           </div>
@@ -1053,7 +1053,7 @@
             </div>
 
             <!-- Form Fields Prescribed by Founders -->
-            <form id="registrationForm">
+            <form id="registrationForm" onsubmit="handleRegistrationSubmit(event)">
               
               <div class="form-grid-2">
                 <div class="form-group">
@@ -1106,7 +1106,7 @@
               <div class="form-group">
                 <label class="form-label">Program Interest * (Select all that apply)</label>
                 <div class="checkbox-group-grid">
-                  <div class="checkbox-card" data-program="Quarterly Subscription">
+                  <div class="checkbox-card" id="cardQuarterly" onclick="toggleProgramCheckbox('checkQuarterly', this)">
                     <input type="checkbox" id="checkQuarterly" value="Quarterly Subscription">
                     <div>
                       <strong style="font-size:0.85rem;display:block;">Quarterly Subscription</strong>
@@ -1114,7 +1114,7 @@
                     </div>
                   </div>
 
-                  <div class="checkbox-card" data-program="10-Session Punch Pass">
+                  <div class="checkbox-card" id="cardPunch" onclick="toggleProgramCheckbox('checkPunch', this)">
                     <input type="checkbox" id="checkPunch" value="10-Session Punch Pass">
                     <div>
                       <strong style="font-size:0.85rem;display:block;">10-Session Punch Pass</strong>
@@ -1122,7 +1122,7 @@
                     </div>
                   </div>
 
-                  <div class="checkbox-card selected" data-program="Drop-in">
+                  <div class="checkbox-card selected" id="cardDropin" onclick="toggleProgramCheckbox('checkDropin', this)">
                     <input type="checkbox" id="checkDropin" value="Drop-in" checked>
                     <div>
                       <strong style="font-size:0.85rem;display:block;">Drop-in (₹1,500)</strong>
@@ -1130,7 +1130,7 @@
                     </div>
                   </div>
 
-                  <div class="checkbox-card" data-program="Weekend Workshops">
+                  <div class="checkbox-card" id="cardWorkshop" onclick="toggleProgramCheckbox('checkWorkshop', this)">
                     <input type="checkbox" id="checkWorkshop" value="Weekend Workshops">
                     <div>
                       <strong style="font-size:0.85rem;display:block;">Weekend Workshops (₹2,000)</strong>
@@ -1349,7 +1349,7 @@
         <button type="button" class="btn btn-primary" onclick="closeBookingModal()">Done</button>
       </div>
 
-      <form id="modalBookingForm">
+      <form id="modalBookingForm" onsubmit="handleModalBookingSubmit(event)">
         <h3 style="font-size:1.8rem;margin-bottom:2px;">Book a Visit / Reserve a Slot</h3>
         <p style="font-size:0.8rem;color:var(--color-text-muted);margin-bottom:16px;">
           Experience our AQI-filtered sanctuary, process art atelier, and child-led play zones.
@@ -1378,7 +1378,7 @@
         <div class="form-group">
           <label class="form-label">Program Option</label>
           <select id="modalProgramSelect" class="form-control">
-            <option value="Studio Visit & Experiential Tour">Studio Walkthrough (Free)</option>
+            <option value="Studio Visit &amp; Experiential Tour">Studio Walkthrough (Free)</option>
             <option value="Pay-as-you-Go Walk-In">Pay-as-you-Go Walk-In (₹1,500)</option>
             <option value="Quarterly Pass Subscription">Quarterly Pass Subscription</option>
             <option value="10-Session Punch Pass">10-Session Punch Pass (₹13,000)</option>
@@ -1408,7 +1408,7 @@
         <button type="button" class="btn btn-primary" onclick="closeBrochureModal()">Close Window</button>
       </div>
 
-      <form id="modalBrochureForm">
+      <form id="modalBrochureForm" onsubmit="handleModalBrochureSubmit(event)">
         <h3 style="font-size:1.8rem;margin-bottom:2px;">Download Studio Information Brochure</h3>
         <p style="font-size:0.8rem;color:var(--color-text-muted);margin-bottom:16px;">
           Receive our complete pedagogical dossier, air filtration standards, and program fee guide.
@@ -1436,7 +1436,325 @@
     </div>
   </div>
 
-  <!-- 🔴 VANILLA JAVASCRIPT LOGIC (NO FRAMEWORKS REQUIRED) 🔴 -->
-  <script src="./script.js"></script>
+  <!-- ========================================================================
+       🔴 11. BULLETPROOF STANDALONE JAVASCRIPT (ZERO DEPENDENCIES) 🔴
+       ======================================================================== -->
+  <script>
+    /* 1. Mobile Menu Toggle */
+    function toggleMobileMenu() {
+      var drawer = document.getElementById('mobileNavDrawer');
+      if (drawer) {
+        var isOpen = drawer.classList.contains('open') || drawer.style.display === 'block';
+        if (isOpen) {
+          drawer.classList.remove('open');
+          drawer.style.display = 'none';
+        } else {
+          drawer.classList.add('open');
+          drawer.style.display = 'block';
+        }
+      }
+    }
+
+    /* 2. Age Bracket Switcher Data */
+    var ageData = {
+      '1.5-2.5': {
+        title: 'Toddler Sanctuary (Ages 1.5–2.5)',
+        tagline: 'Sensory grounding, tactile floor autonomy & emotional regulation',
+        focus: 'Gentle, low-stimulation exploration with natural non-toxic timbers, soft climbing arches, and soothing acoustic textures.',
+        color: '#4F9CF8',
+        bg: '#EBF3FE',
+        highlights: [
+          'Plastic-free loose parts & natural materials',
+          'Intrapersonal haven for quiet pauses',
+          '1:4 educator-to-child ratio'
+        ]
+      },
+      '2.5-4': {
+        title: 'Curious Explorers (Ages 2.5–4)',
+        tagline: 'Process art, sensory integration & Montessori toolsets',
+        focus: 'Open-ended clay work, shadow & light tables, and self-correcting wooden puzzles celebrating the process of discovery.',
+        color: '#B8433C',
+        bg: '#FBEAE8',
+        highlights: [
+          'Atelier of Curiosity (no rigid templates)',
+          'Collaborative loose-parts architecture',
+          'Guided by certified Montessori facilitators'
+        ]
+      },
+      '4-6': {
+        title: 'Creative Inquirers (Ages 4–6)',
+        tagline: 'Spatial problem solving, paper engineering & social dialogue',
+        focus: 'Hands-on construction, 3D paper folding and origami, natural botanical sciences, and collaborative peer inquiry.',
+        color: '#48BF7B',
+        bg: '#EAF8F1',
+        highlights: [
+          'Origami & 3D tactile paper sculpting',
+          'Multiple Intelligences holistic tracking',
+          'High-order curiosity & vocabulary building'
+        ]
+      }
+    };
+
+    function switchAgeTier(ageKey) {
+      var data = ageData[ageKey];
+      if (!data) return;
+
+      var b1 = document.getElementById('btnAge1');
+      var b2 = document.getElementById('btnAge2');
+      var b3 = document.getElementById('btnAge3');
+      if (b1) b1.classList.remove('active');
+      if (b2) b2.classList.remove('active');
+      if (b3) b3.classList.remove('active');
+
+      if (ageKey === '1.5-2.5' && b1) b1.classList.add('active');
+      if (ageKey === '2.5-4' && b2) b2.classList.add('active');
+      if (ageKey === '4-6' && b3) b3.classList.add('active');
+
+      var box = document.getElementById('heroTierBox');
+      var title = document.getElementById('heroTierTitle');
+      var tagline = document.getElementById('heroTierTagline');
+      var focus = document.getElementById('heroTierFocus');
+      var highlights = document.getElementById('heroTierHighlights');
+
+      if (box) box.style.backgroundColor = data.bg;
+      if (title) title.textContent = data.title;
+      if (tagline) tagline.textContent = '"' + data.tagline + '"';
+      if (focus) focus.textContent = data.focus;
+
+      if (highlights) {
+        var html = '';
+        for (var i = 0; i < data.highlights.length; i++) {
+          html += '<div style="display:flex;align-items:center;gap:6px;font-size:0.8rem;font-weight:600;margin-top:4px;">' +
+            '<span style="color:' + data.color + ';">✓</span> <span>' + data.highlights[i] + '</span></div>';
+        }
+        highlights.innerHTML = html;
+      }
+    }
+
+    /* 3. Philosophy Section Tabs */
+    function switchPhilosophyTab(targetId, btnElem) {
+      var allBtns = document.querySelectorAll('.tab-nav-btn');
+      allBtns.forEach(function(b) { b.classList.remove('active'); });
+      if (btnElem) btnElem.classList.add('active');
+
+      var allPanels = document.querySelectorAll('.tab-content-panel');
+      allPanels.forEach(function(p) { p.classList.remove('active'); p.style.display = 'none'; });
+
+      var target = document.getElementById(targetId);
+      if (target) {
+        target.classList.add('active');
+        target.style.display = 'block';
+      }
+    }
+
+    /* 4. The Physical Space Zone Tabs */
+    var zoneData = [
+      {
+        title: 'The Create Studio (Clay, Art & Sound)',
+        tagline: 'Tactile exploration where discovery matters more than perfection',
+        description: 'Equipped with natural terracotta clay, child-height light tables, shadow projection easels, and organic rhythm instruments. Children experiment with pigment density, form transformation, and acoustic pitch in an open, spill-friendly atelier.',
+        color: '#4F9CF8',
+        materials: [
+          'Pure earth non-toxic modeling clay & carving tools',
+          'Backlit sensory light tables for translucency and color mixing',
+          'Rhythmic sound play with rainsticks, woodblocks & Tibetan singing bowls'
+        ]
+      },
+      {
+        title: 'Montessori & Cognitive Nook',
+        tagline: 'Self-directed order, concentration and spatial logic',
+        description: 'Arranged strictly at toddler and preschooler eye levels. Trays of mortise-and-tenon wood cylinders, color graduated tablets, tactile weight sorting scales, and counting beads encourage repetitive trial-and-error without adult correction.',
+        color: '#B8433C',
+        materials: [
+          'FSC-certified European beechwood geometric solids',
+          'Self-correcting Montessori sensory knobbed cylinders',
+          'Weight balances, tongs, pincer tweezers & grain transfer trays'
+        ]
+      },
+      {
+        title: 'The Intrapersonal & Reading Haven',
+        tagline: 'A sanctuary for emotional regulation and quiet observation',
+        description: 'A cozy, acoustically protected alcove designed for children who need a pause from high sensory stimulation. Low shatterproof mirrors foster facial emotional recognition, while curated wordless picture books offer peaceful solace.',
+        color: '#48BF7B',
+        materials: [
+          'Acoustic sound-absorbing felt panels in soothing warm tones',
+          'Organic sheepskin floor rugs and weighted linen cushions',
+          'Curated picture library focused on emotions, nature, and wonder'
+        ]
+      },
+      {
+        title: 'Sensory & Active Discovery Path',
+        tagline: 'Vestibular balance and natural gross motor progression',
+        description: 'Children shed their shoes to experience river-stone barefoot paths, gentle curved wooden balance beams, soft-angle Pikler climbing triangles, and padded landing zones, cultivating spatial awareness and body confidence.',
+        color: '#1E232B',
+        materials: [
+          'Textured natural stepping stones (bamboo, cork, smooth pebble)',
+          'Low-rise Pikler climbing frames with gentle incline ramps',
+          'High-density shock-absorbing EVA underlay beneath organic rugs'
+        ]
+      }
+    ];
+
+    function switchZone(index, btnElem) {
+      var btns = document.querySelectorAll('.zone-tab-btn');
+      btns.forEach(function(b) { b.classList.remove('active'); });
+      if (btnElem) btnElem.classList.add('active');
+
+      var z = zoneData[index];
+      if (!z) return;
+
+      var titleElem = document.getElementById('zoneDisplayTitle');
+      var taglineElem = document.getElementById('zoneDisplayTagline');
+      var descElem = document.getElementById('zoneDisplayDesc');
+      var matElem = document.getElementById('zoneDisplayMaterials');
+
+      if (titleElem) titleElem.textContent = z.title;
+      if (taglineElem) taglineElem.textContent = '"' + z.tagline + '"';
+      if (descElem) descElem.textContent = z.description;
+
+      if (matElem) {
+        var html = '';
+        for (var i = 0; i < z.materials.length; i++) {
+          html += '<div style="display:flex;align-items:flex-start;gap:8px;font-size:0.85rem;margin-bottom:6px;">' +
+            '<span style="color:' + z.color + ';margin-top:2px;">•</span>' +
+            '<span>' + z.materials[i] + '</span></div>';
+        }
+        matElem.innerHTML = html;
+      }
+    }
+
+    /* 5. Program Selection Pre-filling */
+    function selectProgram(programName) {
+      var contactSection = document.getElementById('contact');
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+      }
+
+      var cards = document.querySelectorAll('.checkbox-card');
+      cards.forEach(function(card) {
+        var box = card.querySelector('input[type="checkbox"]');
+        if (box && box.value === programName) {
+          box.checked = true;
+          card.classList.add('selected');
+        }
+      });
+    }
+
+    function toggleProgramCheckbox(checkboxId, cardElem) {
+      var checkbox = document.getElementById(checkboxId);
+      if (checkbox) {
+        checkbox.checked = !checkbox.checked;
+        if (checkbox.checked) {
+          cardElem.classList.add('selected');
+        } else {
+          cardElem.classList.remove('selected');
+        }
+      }
+    }
+
+    /* 6. Form Handlers */
+    function handleRegistrationSubmit(e) {
+      e.preventDefault();
+      var nameInput = document.getElementById('parentName');
+      var name = nameInput ? nameInput.value : 'Parent';
+      var nameElem = document.getElementById('registeredParentName');
+      if (nameElem) nameElem.textContent = name;
+
+      var form = document.getElementById('registrationForm');
+      var success = document.getElementById('formSuccessBox');
+      if (form) form.style.display = 'none';
+      if (success) success.style.display = 'block';
+    }
+
+    function resetRegistrationForm() {
+      var form = document.getElementById('registrationForm');
+      var success = document.getElementById('formSuccessBox');
+      if (form) {
+        form.reset();
+        form.style.display = 'block';
+      }
+      if (success) success.style.display = 'none';
+    }
+
+    /* 7. Modals */
+    function openBookingModal(defaultOption) {
+      var modal = document.getElementById('bookingModal');
+      if (modal) {
+        modal.classList.add('open');
+        modal.style.display = 'flex';
+        if (defaultOption) {
+          var sel = document.getElementById('modalProgramSelect');
+          if (sel) sel.value = defaultOption;
+        }
+      }
+    }
+
+    function closeBookingModal() {
+      var modal = document.getElementById('bookingModal');
+      if (modal) {
+        modal.classList.remove('open');
+        modal.style.display = 'none';
+      }
+    }
+
+    function openBrochureModal() {
+      var modal = document.getElementById('brochureModal');
+      if (modal) {
+        modal.classList.add('open');
+        modal.style.display = 'flex';
+      }
+    }
+
+    function closeBrochureModal() {
+      var modal = document.getElementById('brochureModal');
+      if (modal) {
+        modal.classList.remove('open');
+        modal.style.display = 'none';
+      }
+    }
+
+    function handleModalBookingSubmit(e) {
+      e.preventDefault();
+      var form = document.getElementById('modalBookingForm');
+      var success = document.getElementById('modalBookingSuccess');
+      if (form) form.style.display = 'none';
+      if (success) success.style.display = 'block';
+    }
+
+    function handleModalBrochureSubmit(e) {
+      e.preventDefault();
+      var form = document.getElementById('modalBrochureForm');
+      var success = document.getElementById('modalBrochureSuccess');
+      if (form) form.style.display = 'none';
+      if (success) success.style.display = 'block';
+    }
+
+    /* Keydown & Window Listeners */
+    window.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeBookingModal();
+        closeBrochureModal();
+      }
+    });
+
+    window.addEventListener('click', function(e) {
+      var booking = document.getElementById('bookingModal');
+      var brochure = document.getElementById('brochureModal');
+      if (e.target === booking) closeBookingModal();
+      if (e.target === brochure) closeBrochureModal();
+    });
+
+    /* Sticky Header on Scroll */
+    window.addEventListener('scroll', function() {
+      var hdr = document.getElementById('siteHeader');
+      if (hdr) {
+        if (window.scrollY > 20) {
+          hdr.classList.add('scrolled');
+        } else {
+          hdr.classList.remove('scrolled');
+        }
+      }
+    }, { passive: true });
+  </script>
 </body>
 </html>
